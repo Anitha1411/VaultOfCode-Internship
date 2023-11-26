@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Please register here</h1>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <label for="firstName" class="required">First Name:</label>
+            <input type="text" class="text-fields" name="firstName" required>
+
+            <label for="middleName">Middle Name:</label>
+            <input type="text" class="text-fields" name="middleName">
+
+            <label for="lastName" class="required">Last Name:</label>
+            <input type="text" class="text-fields" name="lastName" required>
+
+            <label for="dob" class="required">Date of Birth:</label>
+            <input type="date" id="dob" class="text-fields" name="dob" required>
+
+            <label for="email" class="required">Email Address:</label>
+            <input type="email" class="text-fields" name="email" required>
+
+            <label for="mobileNumber" class="required">Mobile number:</label>
+            <input type="number" class="text-fields" name="mobileNumber" required>
+
+            <label for="AltmobileNumber">Alternate Mobile number:</label>
+            <input type="number" class="text-fields" name="AltmobileNumber">
+
+            <label for="password" class="required">Password:</label>
+            <input type="password" id="password" class="text-fields" name="password" required>
+
+            <label for="confirmPassword" class="required">Confirm Password:</label>
+            <input type="password" id="confirmPassword" class="text-fields" name="confirmPassword" required>
+
+            <label class="required">Gender:</label>
+            <div class="gender-selection">
+                Male<input type="radio" id="male" class="gender" name="gender" value="male" required>
+                Female<input type="radio" id="female" class="gender" name="gender" value="female" required>
+                Other<input type="radio" id="other" class="gender" name="gender" value="other" required>
+            </div>
+
+            <label style="margin-top: 15px;">
+                <input type="checkbox" id="terms" name="terms" required>
+                I accept the Terms and Conditions
+            </label>
+            <button type="submit">Register</button>
+            <center>Already have an account? <a href="#">SIGN IN</a></center>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
